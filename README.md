@@ -150,6 +150,7 @@ def preprocessing(filename):
 ```
 
 #### Step 5: Finally Classify
+```python
 def classify():
   processed_data = preprocessing('useful.csv')
   X = processed_data[:, :-1]
@@ -164,3 +165,4 @@ def classify():
   selected_feat = X_train.columns[(sel.get_support())]
   print(len(selected_feat))
   print(selected_feat)
+```
